@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #333333;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.container {
+  background-color: #000000;
+  //   width: 40%;
+  height: 80%;
+  border-radius: 50px;
+  border: 2px solid #b4b4b4;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2rem;
+
+  .output {
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 4rem;
+    text-align: right;
+    width: 100%;
+  }
+
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 2rem;
+    gap: 1rem;
+    width: 100%;
+    place-items: center;
+
+    p {
+      height: 4rem;
+      width: 4rem;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: black;
+      border-radius: 50%;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    .switch {
+      background-color: #a0a0a0;
+    }
+
+    .operator {
+      background-color: #f59800;
+      color: #ffedc3;
+    }
+
+    .number {
+      background-color: #303030;
+      color: #f5f5f5;
+    }
+
+    .zero-wrapper {
+      grid-column: span 2;
+      border-radius: 3rem;
+      background-color: #303030;
+      width: 95%;
+      .zero {
+        background-color: transparent;
+        color: #f5f5f5;
+      }
+    }
+  }
+}
